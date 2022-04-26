@@ -3,6 +3,8 @@
     <navigation></navigation>
     <v-main class="pt-0">
       <home></home>
+      <about-us></about-us>
+      <cobertura-yanuncios></cobertura-yanuncios>
     </v-main>
   </v-app>
 
@@ -13,12 +15,16 @@
 
 import Navigation from "./components/Navigation";
 import Home from "./components/Home";
+import AboutUs from './components/aboutUs.vue';
+import CoberturaYanuncios from './components/coberturaYanuncios.vue';
 export default {
   name: 'App',
 
   components: {
     Home,
-    Navigation
+    Navigation,
+    AboutUs,
+    CoberturaYanuncios
 
   },
 

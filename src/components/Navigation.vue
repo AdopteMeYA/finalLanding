@@ -5,16 +5,16 @@
       app
       temporary
       dark
-      src="assets/img/bgDrawer.jpg"
+      src="@/assets/img/bgDrawer.jpg"
   >
     <v-list>
       <v-list-item>
         <v-list-item-avatar>
-          <img src="../assets/img/LOGO.png" alt="Logo" />
+          <v-img src="@/assets/a_img/nuevologo.png" alt="Logo" />
         </v-list-item-avatar>
         <v-list-item-content>
-          <v-list-item-title class="title">Calango</v-list-item-title>
-          <v-list-item-subtitle>WEB</v-list-item-subtitle>
+          <v-list-item-title class="title">Adopt Me Ya!</v-list-item-title>
+
         </v-list-item-content>
       </v-list-item>
     </v-list>
@@ -44,12 +44,19 @@
       app
       :color="color"
       :flat="flat"
-      dark
+      style="color:white;background-color:white"
       class="px-15"
       :class="{ expand: flat }"
   >
+
+      <v-img src="@/assets/a_img/nuevologo.png" alt="imagen de logo"
+             style="max-height: 7vh; max-width: 7vh"> </v-img>
+      <v-card-title style="color: #000000">Adopt Me Ya!</v-card-title>
+
+
+    <v-spacer />
     <v-toolbar-title>
-      <v-img src="assets/img/logo.png" max-width="50px" />
+
     </v-toolbar-title>
     <v-spacer />
     <v-app-bar-nav-icon
@@ -57,21 +64,21 @@
         class="mr-4"
         v-if="isXs"
     />
-    <div v-else>
-      <v-btn text @click="$vuetify.goTo('#hero')">
-        <span class="mr-2">Home</span>
+    <div v-else >
+      <v-btn text @click="$vuetify.goTo('#inicio')">
+        <span style="font-weight: bold; font-size:15px;line-height: 14px;">Inicio</span>
       </v-btn>
-      <v-btn text @click="$vuetify.goTo('#features')">
-        <span class="mr-2">Sobre</span>
+      <v-btn text @click="$vuetify.goTo('#porque')">
+        <span style="font-weight: bold; font-size:15px;line-height: 14px;">¿Por qué usar Adopt Me Ya!?</span>
       </v-btn>
-      <v-btn text @click="$vuetify.goTo('#download')">
-        <span class="mr-2">Download</span>
+      <v-btn text @click="$vuetify.goTo('#sobre')">
+        <span style="font-weight: bold; font-size:15px;line-height: 14px;">Sobre nosotros</span>
       </v-btn>
-      <v-btn text @click="$vuetify.goTo('#pricing')">
-        <span class="mr-2">Preços</span>
+      <v-btn text @click="$vuetify.goTo('#precios')">
+        <span style="font-weight: bold; font-size:15px;line-height: 14px;">Precios</span>
       </v-btn>
-      <v-btn rounded outlined text @click="$vuetify.goTo('#contact')">
-        <span class="mr-2">Contate-nos</span>
+      <v-btn rounded outlined text @click="$vuetify.goTo('#contacto')">
+        <span style="font-weight: bold; font-size:15px;line-height: 14px;">Contactanos</span>
       </v-btn>
     </div>
   </v-app-bar>
@@ -95,11 +102,11 @@ export default {
       drawer: null,
       isXs: false,
       items: [
-        ["mdi-home-outline", "Home", "#hero"],
-        ["mdi-information-outline", "Sobre", "#features"],
-        ["mdi-download-box-outline", "Download", "#download"],
-        ["mdi-currency-usd", "Preços", "#pricing"],
-        ["mdi-email-outline", "Contatos", "#contact"],
+        ["mdi-home-outline", "Inico", "#inicio"],
+        ["mdi-information-outline", "¿Porque usar Adopt Me Ya!?", "#porque"],
+        ["mdi-download-box-outline", "Sobre nosotros", "#sobre"],
+        ["mdi-currency-usd", "Precios", "#precios"],
+        ["mdi-email-outline", "Contacto", "#contacto"],
       ],
     }),
     props: {
