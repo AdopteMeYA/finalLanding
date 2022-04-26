@@ -1,0 +1,97 @@
+<template>
+  <div class="aboutUs">
+    <v-row class="row1">
+      <v-col class="col1">
+        <video
+          src="../media/adoptVideo.mp4"
+          width="640"
+          height="480"
+          controls
+        ></video>
+      </v-col>
+      <v-col>
+        <h1>Sobre <br> Nosotros</h1>
+        <p>
+          Somos EasySoftware Corp, una empresa conformada por un grupo de
+          ingenieros de Software preocupados por el bienestar de las mascotas.
+          Usamos nuestro conocimiento para crear herramientas para ayudar a
+          mejorar la calidad de vida de todos.
+        </p>
+        <h1>Mision</h1>
+        <p>
+          Nuestra Misión es dar una solución ágil a nuestros clientes y
+          satisfacer todas sus expectativas respecto al producto desarrollado.
+        </p>
+        <h1>Vision</h1>
+        <p>
+          Ser una empresa local en ser líder en la categoría de desarrollo de
+          software A través de un trabajo constante y reclutar a los mejores
+          talentos. De esta manera, crear una buena imagen ante nuestros
+          clientes.
+        </p>
+      </v-col>
+    </v-row>
+  </div>
+</template>
+
+<style>
+.row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+.col {
+  margin: 7rem;
+}
+video{
+    padding: 1rem
+    
+}
+.col1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#B6DEEA;
+}
+
+#seccion2 {
+  justify-content: center;
+  align-content: center;
+  text-align: justify;
+}
+#seccion1 {
+  align-content: center;
+}
+
+.col>h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 350, bold;
+  font-size: 40px;
+  line-height: 30px;
+  /* identical to box height, or 90% */
+
+  text-transform: capitalize;
+
+  color: #2e2e2e;
+}
+.col>p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 1rem;
+  /* or 125% */
+
+  color: #676767;
+}
+
+
+</style>
+<script>
+export default {
+  name: "aboutUs",
+};
+</script>
