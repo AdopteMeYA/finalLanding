@@ -1,6 +1,6 @@
 <template>
   <div class="cya">
-    <v-row>
+    <v-row >
       <v-col>   
         <h1 style="line-height:40px;">Cobertura</h1>
         <p>
@@ -8,6 +8,9 @@
           se nota.<br> Podras ver las mascotas más cercanas<br> a tu ubicaciónlo.
         </p>
       </v-col>
+
+
+
       <v-col class='img1'>
         <img src="../media/maps.png" alt="">
       </v-col>

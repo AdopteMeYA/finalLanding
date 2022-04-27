@@ -1,35 +1,36 @@
 <template>
   <section id="hero">
-    <v-parallax dark src="@/assets/a_img/vector_azul.png" style="max-height: 600vh; height:110vh ;position: relative;margin-bottom:-110px ">
+    <v-parallax dark src="@/assets/a_img/vector_azul.png" style="max-height: 600vh; height:830px ; width: 100% ;position: relative;margin-bottom:-110px ">
       <v-row align="center" justify="center" style="margin-bottom:110px;height:50vh" >
-        <v-col cols="10">
-          <v-row align="center" justify="center" >
-            <v-col cols="12" md="6" xl="8">
+        <v-col cols="10" style="left: 220px">
 
-              <h1 style="font-family: 'Poppins';font-style: normal; color: #2E2E2E;font-weight: 700;font-size: 74px;line-height: 88px;letter-spacing: -0.01em; margin-top:-120px">
+              <h1  style="font-family: 'Poppins';font-style: normal; color: #2E2E2E;font-weight: 700;font-size: 74px;line-height: 88px;letter-spacing: -0.01em; margin-top:-120px">
+                <br/>
+                <br/>
                 Miles de <br />
-                mascotas esperan <br />
-                por un hogar
+                mascotas <br />esperan por un<br /> hogar<br />
               </h1>
+
               <v-btn
                   rounded
                   outlined
                   large
                   dark
                   @click="$vuetify.goTo('#porque')"
-                  style="position: absolute;width: 186px;height: 50px;left: 611px;top: 500px;background: #FEC067;
-                   color:#000000;font-style: normal;font-weight: 700;font-size: 24px;border:0px"
-              >
+                  align="center"
+                  style="position: absolute;width: 186px;height: 50px;top: 580px; left: 450px;background: #FEC067;
+                   color:#000000; font-family: Poppins;font-weight: 700;font-size: 24px;border:0px">
                 Ingresa
 
                 <v-icon class="ml-2" style="color: #000000; text-align: center; ">mdi-arrow-down</v-icon>
               </v-btn>
 
-              <v-img src="@/assets/a_img/5331015.png" alt="imagen de mujer con mascota"
-              style="position: absolute;width: 80vh;height: 70vh;left: 100vh;top: 10%;"></v-img>
-            </v-col>
-            <v-col cols="12" md="6" xl="4" class="hidden-sm-and-down"> </v-col>
-          </v-row>
+
+        </v-col>
+        <v-col cols="10" align="right">
+          <v-img align="right" src="@/assets/a_img/5331015.png" alt="imagen de mujer con mascota"
+                  style="position: absolute;width: 80vh;height: 70vh;left: 115vh;top: 15%;"></v-img>
+
         </v-col>
       </v-row>
 

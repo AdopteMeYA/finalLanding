@@ -1,49 +1,10 @@
 <template>
 <div>
-  <v-navigation-drawer
-      v-model="drawer"
-      app
-      temporary
-      dark
-      src="@/assets/img/bgDrawer.jpg"
-  >
-    <v-list>
-      <v-list-item>
-        <v-list-item-avatar>
-          <v-img src="@/assets/a_img/nuevologo.png" alt="Logo" />
-        </v-list-item-avatar>
-        <v-list-item-content>
-          <v-list-item-title class="title">Adopt Me Ya!</v-list-item-title>
-
-        </v-list-item-content>
-      </v-list-item>
-    </v-list>
-
-    <v-divider />
-
-    <v-list dense>
-      <v-list-item
-          v-for="([icon, text, link], i) in items"
-          :key="i"
-          link
-          @click="$vuetify.goTo(link)"
-      >
-        <v-list-item-icon class="justify-center">
-          <v-icon>{{ icon }}</v-icon>
-        </v-list-item-icon>
-        <v-list-item-content>
-          <v-list-item-title class="subtitile-1">{{
-              text
-            }}</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-    </v-list>
-  </v-navigation-drawer>
 
   <v-app-bar
       app
       :color="color"
-      :flat="flat"
+      flat
       style="color:white;background-color:white"
       class="px-15"
       :class="{ expand: flat }"
@@ -65,7 +26,7 @@
         v-if="isXs"
     />
     <div v-else >
-      <v-btn text @click="$vuetify.goTo('#inicio')">
+      <v-btn text @click="$vuetify.goTo('#home')">
         <span style="font-weight: bold; font-size:15px;line-height: 14px;">Inicio</span>
       </v-btn>
       <v-btn text @click="$vuetify.goTo('#porque')">
@@ -73,6 +34,9 @@
       </v-btn>
       <v-btn text @click="$vuetify.goTo('#sobre')">
         <span style="font-weight: bold; font-size:15px;line-height: 14px;">Sobre nosotros</span>
+      </v-btn>
+      <v-btn text @click="$vuetify.goTo('#cobertura')">
+        <span style="font-weight: bold; font-size:15px;line-height: 14px;">Cobertura</span>
       </v-btn>
       <v-btn text @click="$vuetify.goTo('#precios')">
         <span style="font-weight: bold; font-size:15px;line-height: 14px;">Precios</span>
@@ -89,7 +53,15 @@
 .v-toolbar {
   transition: 0.6s;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
+template{
+   font-family:Poppins;
+}
+div{
+
+  font-family:Poppins;
+}
 .expand {
   height: 80px !important;
   padding-top: 10px;
@@ -105,6 +77,7 @@ export default {
         ["mdi-home-outline", "Inico", "#inicio"],
         ["mdi-information-outline", "¿Porque usar Adopt Me Ya!?", "#porque"],
         ["mdi-download-box-outline", "Sobre nosotros", "#sobre"],
+        ["mdi-download-box-outline", "Cobertura", "#cobertura"],
         ["mdi-currency-usd", "Precios", "#precios"],
         ["mdi-email-outline", "Contacto", "#contacto"],
       ],

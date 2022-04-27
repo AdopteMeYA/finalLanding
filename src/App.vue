@@ -5,6 +5,8 @@
       <home></home>
       <about-us></about-us>
       <cobertura-yanuncios></cobertura-yanuncios>
+      <Registro></Registro>
+      <Footer></Footer>
     </v-main>
   </v-app>
 
@@ -17,6 +19,8 @@ import Navigation from "./components/Navigation";
 import Home from "./components/Home";
 import AboutUs from './components/aboutUs.vue';
 import CoberturaYanuncios from './components/coberturaYanuncios.vue';
+import Registro from './components/Registro.vue';
+import Footer  from "@/components/Footer";
 export default {
   name: 'App',
 
@@ -24,7 +28,9 @@ export default {
     Home,
     Navigation,
     AboutUs,
-    CoberturaYanuncios
+    CoberturaYanuncios,
+    Registro,
+    Footer
 
   },
 
