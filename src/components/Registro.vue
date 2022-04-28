@@ -20,14 +20,21 @@
             <v-form ref="form"  lazy-validation style="background-color: white;alignment: center" >
               <h1  style="font-family: 'Poppins';font-style: normal; color: #2E2E2E;font-weight: 700;font-size: 20px; text-align: center">
                 Registrate para recibir información<br/><br/>
+
               </h1>
 
-              <v-row style="width: 14vh;left: 152px">
-                <v-img src="@/assets/a_img/nuevologo.png" alt="logo de adopt me ya!"  width="120px" ></v-img>
+              <v-btn
+                  rounded
+                  outlined
+                  large
+                  dark
+                  style="background: #ffffff; left: 182px;
+                   color:#000000; font-family: Poppins;font-weight: 700;font-size: 2px;border:0px"
+                   font-family: Poppins
 
-              </v-row>
+              ><img  src="@/assets/a_img/nuevologo.png"  width="85px"></v-btn>
               <br/>
-
+              <br/> <br/>
 
               <v-text-field
                   align="center"

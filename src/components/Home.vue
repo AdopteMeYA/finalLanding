@@ -40,7 +40,7 @@
       <v-row align="center" justify="center" >
 
         <v-col cols="10">
-          <v-row align="center" justify="space-around" style="margin-top:0; margin-bottom:0">
+          <v-row align="center" justify="space-around" style="margin-top:-100px; margin-bottom:10px">
             <v-col cols="12" class="text-center" style="background-color: #FFCF8A;margin-top:0; margin-bottom:0">
               <h1 style="font-family: 'Poppins';margin-top:5vh;font-style: normal;font-weight: 700;font-size: 60px;line-height: 54px;text-align: center;text-transform: capitalize;color: #2E2E2E;">
                 ¿Porqué usar Adopt Me Ya!?
@@ -53,8 +53,7 @@
             <v-col
                 cols="12"
                 sm="4"
-                class="text-center"
-
+                style="text-align-all: center"
                 v-for="(feature, i) in features"
                 :key="i"
             >
@@ -64,14 +63,14 @@
                     shaped
                     :elevation="hover ? 10 : 4"
                     :class="{ up: hover }"
-                    style="background-color:#B9E3F0"
+                    style="font-family: Poppins;background-color:#B9E3F0"
 
                 >
                   <v-card
-                      style="
+                      style="font-family: Poppins;
                       background: white;
                       border-radius: 12px;
-                      transform: rotate(-3deg);"
+                      transform: rotate(-1deg);"
                   >
 
 
@@ -153,7 +152,11 @@ export default {
     stroke: white;
     transform: translateY(0);
   }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
+  .card{
+    font-family:Poppins;
+  }
   &:hover {
     .triangle {
       stroke-dashoffset: 0;

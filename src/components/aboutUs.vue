@@ -9,20 +9,20 @@
           controls
         ></video>
       </v-col>
-      <v-col>
-        <h1>Sobre <br> Nosotros</h1>
+      <v-col style="left: 100px" >
+        <h1 style="line-height: 48px">Sobre <br> Nosotros</h1>
         <p>
           Somos EasySoftware Corp, una empresa conformada por un grupo de
           ingenieros de Software preocupados por el bienestar de las mascotas.
           Usamos nuestro conocimiento para crear herramientas para ayudar a
           mejorar la calidad de vida de todos.
         </p>
-        <h1>Mision</h1>
+        <h1 style="line-height: 48px">Mision</h1>
         <p>
           Nuestra Misión es dar una solución ágil a nuestros clientes y
           satisfacer todas sus expectativas respecto al producto desarrollado.
         </p>
-        <h1>Vision</h1>
+        <h1 style="line-height: 48px">Vision</h1>
         <p>
           Ser una empresa local en ser líder en la categoría de desarrollo de
           software A través de un trabajo constante y reclutar a los mejores
@@ -67,7 +67,6 @@ video{
 .col>h1 {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 350, bold;
   font-size: 40px;
   line-height: 30px;
   /* identical to box height, or 90% */
