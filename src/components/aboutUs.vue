@@ -1,5 +1,5 @@
 <template>
-  <div class="aboutUs">
+  <div class="aboutUs" id="sobre">
     <v-row class="row1">
       <v-col class="col1">
         <video

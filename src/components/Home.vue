@@ -1,5 +1,5 @@
 <template>
-  <section id="hero">
+  <section id="home">
     <v-parallax dark src="@/assets/a_img/vector_azul.png" style="max-height: 600vh; height:830px ; width: 100% ;position: relative;margin-bottom:-110px ">
       <v-row align="center" justify="center" style="margin-bottom:110px;height:50vh" >
         <v-col cols="10" style="left: 220px">

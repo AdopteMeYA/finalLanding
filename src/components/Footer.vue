@@ -1,4 +1,5 @@
 <template>
+  <section id="contacto">
   <v-content style="background-color: #ffffff; height:10vh" >
     <v-row align="center" justify="center" style="margin-bottom:4px;height:23vh">
 
@@ -35,7 +36,7 @@
 
     </v-row>
   </v-content>
-
+  </section>
 </template>
 
 <script>

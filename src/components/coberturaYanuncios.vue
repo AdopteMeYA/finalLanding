@@ -1,11 +1,12 @@
 <template>
+  <section id="cobertura">
   <div class="cya">
-    <v-row >
+    <v-row style="background-color:#B6DEEA ">
       <v-col>   
         <h1 style="line-height:40px;">Cobertura</h1>
         <p>
           ¡Adóptame ya! tiene una cobertura<br> a nivel nacional y 
-          se nota.<br> Podras ver las mascotas más cercanas<br> a tu ubicaciónlo.
+          se nota.<br> Podras ver las mascotas más cercanas<br> a tu ubicación.
         </p>
       </v-col>
 
@@ -15,8 +16,8 @@
         <img src="../media/maps.png" alt="">
       </v-col>
     </v-row>
-    <v-row>
-      <v-col id="anuncio">
+    <v-row id="precios">
+      <v-col id="anuncio" >
         <h2>Economico</h2>
         <h3>s/.6.99</h3>
         <p>Publica un anuncio de tus servicios<br> o producto por 3 días con alcance<br> de 2 000 usuarios</p>
@@ -33,6 +34,7 @@
       </v-col>
     </v-row>
   </div>
+  </section>
 </template>
 
 <style>
