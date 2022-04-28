@@ -42,7 +42,7 @@
         <v-col cols="10">
           <v-row align="center" justify="space-around" style="margin-top:-100px; margin-bottom:10px">
             <v-col cols="12" class="text-center" style="background-color: #FFCF8A;margin-top:0; margin-bottom:0">
-              <h1 style="font-family: 'Poppins';margin-top:5vh;font-style: normal;font-weight: 700;font-size: 60px;line-height: 54px;text-align: center;text-transform: capitalize;color: #2E2E2E;">
+              <h1 style="font-family: 'Poppins',serif;margin-top:5vh;font-style: normal;font-weight: 700;font-size: 60px;line-height: 54px;text-align: center;text-transform: capitalize;color: #2E2E2E;">
                 ¿Porqué usar Adopt Me Ya!?
 
               </h1>
@@ -80,8 +80,8 @@
                       class="d-block ml-auto mr-auto"
                       :class="{ 'zoom-efect': hover }"
                   ></v-img>
-                  <h1 style="font:22px bold;top: 1073px;font-weight: 600;line-height: 33px;color: #2E2E2E;">{{ feature.title }}</h1>
-                  <h4 class="font-weight-regular subtitle-1">
+                  <h1 style="font-family: 'Poppins',serif;font-style: normal;font:22px bold;top: 1073px;font-weight: 600;line-height: 33px;color: #2E2E2E;text-align: center">{{ feature.title }}</h1>
+                  <h4 style="font-family: 'Poppins';font-style: normal;font-weight: 400;font-size: 14px;line-height: 25px;text-align: center;">
                     {{ feature.text }}
                   </h4>
                   </v-card>
