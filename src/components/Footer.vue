@@ -15,11 +15,15 @@
 
       <v-btn width="5px" style="top: -240px;left:-150px"><v-img
           src="@/assets/a_img/Facebook.png"  width="10px">
-      </v-img></v-btn>
+      </v-img>
 
-      <v-btn width="5px" style="top: -240px;left:-130px"><v-img
+      </v-btn>
+
+      <v-btn width="5px" style="top: -240px;left:-130px" href="https://www.instagram.com/adopt_me_ya_oficial/">
+        <v-img
           src="@/assets/a_img/instagram.png"  width="10px">
-      </v-img></v-btn>
+      </v-img>
+      </v-btn>
 
       <v-btn width="5px" style="top: -240px;left:-110px"><v-img
           src="@/assets/a_img/Twitter.png"  width="10px">

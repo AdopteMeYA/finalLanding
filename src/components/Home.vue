@@ -12,18 +12,19 @@
               </h1>
 
               <v-btn
+                  href="https://www.figma.com/proto/bmJ9D8IkdZQL5p2symnq1b/mockup?node-id=4%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=4%3A2&show-proto-sidebar=1"
                   rounded
                   outlined
                   large
                   dark
-                  @click="$vuetify.goTo('#porque')"
                   align="center"
                   style="position: absolute;width: 186px;height: 50px;top: 580px; left: 450px;background: #FEC067;
                    color:#000000; font-family: Poppins;font-weight: 700;font-size: 24px;border:0px">
-                Ingresa
+                 prototipo
 
                 <v-icon class="ml-2" style="color: #000000; text-align: center; ">mdi-arrow-down</v-icon>
               </v-btn>
+
 
 
         </v-col>
@@ -39,6 +40,7 @@
     <v-container fluid id="porque" class="mt-2" style="position:relative;background-color: #FFCF8A; width: 100%;height: 760px; margin-top:0">
       <v-row align="center" justify="center" >
 
+
         <v-col cols="10">
           <v-row align="center" justify="space-around" style="margin-top:-100px; margin-bottom:10px">
             <v-col cols="12" class="text-center" style="background-color: #FFCF8A;margin-top:0; margin-bottom:0">
@@ -46,6 +48,16 @@
                 ¿Porqué usar Adopt Me Ya!?
 
               </h1>
+              <v-btn
+                  rounded
+                  outlined
+                  large
+                  dark
+                  align="center"
+                  style="margin-top:3%; background: #FEC067;
+                   color:#000000; font-family: Poppins;font-weight: 700;font-size: 24px;border:0px"
+                  href="https://forms.gle/vEbMshzWuz5JufgWA">Ayudanos con tu opinión
+              </v-btn>
               <v-spacer></v-spacer>
               <v-img src="@/assets/a_img/nuevologo.png" alt="logo de adopt me ya!" style=" max-height: 20vh; max-width: 15vh;margin-top:-9vh;flex-direction: inherit "></v-img>
             </v-col>
@@ -110,17 +122,17 @@ export default {
         {
           img: require("@/assets/a_img/vet.png"),
           title: "Veterinarios",
-          text: "Encontrarás toda la información de las veterinarias más cercanas a tu hogar",
+          text: "Podrás atraer clientes, publicar anuncios y ver tus estadísticas a un buen precio.",
         },
         {
           img: require("@/assets/a_img/ideal.png"),
           title: "Mascota ideal",
-          text: "Encontrarás a tu mascota según tus gustos y deseos",
+          text: "Como pet lover encontrarás a veterinarias y mascota según tus gustos y deseos totalmente GRATIS.",
         },
         {
           img: require("@/assets/a_img/pet.png"),
           title: "Haz un impacto positivo",
-          text: "Ayuda a acabar con el abandono de mascotas",
+          text: "Colaboraremos con albergue de mascotas a través de donaciones, donde tú puedes ser parte de esto.",
         },
       ],
     };

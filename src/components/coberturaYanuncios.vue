@@ -10,7 +10,7 @@
         <p style="font-family: 'Poppins';font-style: normal; color: #676767;font-weight: 700;
         font-size: 24px;line-height: 38px; margin-top:20px">
           <br/>Adopt me ya! tiene una cobertura<br> a nivel nacional y
-          se nota.<br> Podras ver las mascotas más cercanas<br> a tu ubicaciónlo.
+          se nota.<br> Podras ver las mascotas más cercanas<br> a tu ubicación.
         </p>
       </v-col>
 
@@ -23,7 +23,7 @@
     <v-parallax id="precios" style=" height:660px ; width: 100% ;position: relative;margin-top:30px ">
       <v-form ref="form"  lazy-validation style="background-color: #ffffff;alignment: center;top: 30px;margin-top:210px;text-align: center" >
       <v-col style="width: 70vh;height: 50vh;left: 22vh; top: -112px;  background-color: #fece8a;letter-spacing: -0.01em;">
-        <h1 >Economico</h1><br/>
+        <h1 >Económico</h1><br/>
         <h1>s/.6.99</h1><br/>
         <p>Publica un anuncio de tus servicios<br> o producto por 3 días con alcance<br> de 2 000 usuarios</p>
         <v-btn

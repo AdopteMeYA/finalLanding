@@ -1,7 +1,9 @@
 <template>
   <div class="aboutUs" id="sobre">
     <v-row class="row1">
+
       <v-col class="col1">
+
         <video
           src="../media/adoptVideo.mp4"
           width="640"
@@ -10,6 +12,7 @@
         ></video>
       </v-col>
       <v-col style="left: 100px" >
+
         <h1 style="line-height: 48px">Sobre <br> Nosotros</h1>
         <p>
           Somos EasySoftware Corp, una empresa conformada por un grupo de
@@ -17,15 +20,15 @@
           Usamos nuestro conocimiento para crear herramientas para ayudar a
           mejorar la calidad de vida de todos.
         </p>
-        <h1 style="line-height: 48px">Mision</h1>
+        <h1 style="line-height: 48px">Misión</h1>
         <p>
           Nuestra Misión es dar una solución ágil a nuestros clientes y
           satisfacer todas sus expectativas respecto al producto desarrollado.
         </p>
-        <h1 style="line-height: 48px">Vision</h1>
+        <h1 style="line-height: 48px">Visión</h1>
         <p>
-          Ser una empresa local en ser líder en la categoría de desarrollo de
-          software A través de un trabajo constante y reclutar a los mejores
+          Ser una empresa local líder en la categoría de desarrollo de
+          software. A través de un trabajo constante y reclutar a los mejores
           talentos. De esta manera, crear una buena imagen ante nuestros
           clientes.
         </p>
