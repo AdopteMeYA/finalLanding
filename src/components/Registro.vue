@@ -1,113 +1,126 @@
 <template>
-  <v-content style="background-color: #B6DEEA" >
-    <v-row align="center" justify="center" style="margin-bottom:280px;height:50vh">
 
-      <v-col cols="10" style="left: 220px">
-        <h1  style="font-family: 'Poppins';font-style: normal; color: #2E2E2E;font-weight: 700;font-size: 74px;line-height: 88px;letter-spacing: -0.01em; margin-top:-120px">
+  <div class="container-fluid m-0 p-0">
+<div class="full-height p-4" >
+  <div class="container pt-3">
 
-          Sé parte del <br />
-          cambio <br />
-        </h1>
+  <v-content style="background-color: #B6DEEA ;align-items: center" >
+    <div style="max-height: 600vh; min-height:80vh ; width: 100% ">
+      <div align="center" justify="center"  >
 
-        <v-img align="right" src="@/assets/a_img/registro.png"
-               style="position: absolute;width: 80vh;height: 70vh;left: 32vh;top: 15%;"></v-img>
+        <div rounded cols="10"  style="position: absolute;width: 52vh;height: 75vh;left: 7vh; top: -2vh;  background-color: white" >
 
+          <v-form @submit.prevent="addEmail(email)" ref="form"  lazy-validation style="background-color: white;alignment: center" >
+            <h1  style="font-family: 'Poppins';font-style: normal; color: #2E2E2E;font-weight: 700;font-size: 20px; text-align: center">
+              Registrate para saber el lanzamiento oficial<br/><br/>
 
-      </v-col>
+            </h1>
 
-      <v-col rounded cols="10"  style="position: absolute;width: 70vh;height: 78vh;left: 113vh; top: -92px;  background-color: white" >
+            <v-btn
+                rounded
+                outlined
+                large
+                dark
+                style="background: #ffffff; left: 182px;
+                   color:#000000; font-family: Poppins;font-weight: 700;align-items: center;align-content: center;font-size: 2px;border:0px"
+                font-family: Poppins
 
-            <v-form ref="form"  lazy-validation style="background-color: white;alignment: center" >
-              <h1  style="font-family: 'Poppins';font-style: normal; color: #2E2E2E;font-weight: 700;font-size: 20px; text-align: center">
-                Registrate para recibir información<br/><br/>
+            ><v-img  src="@/assets/a_img/nuevologo.png"  width="85px" style="right:25vh">
+            </v-img>
+            </v-btn>
+            <br/>
+            <br/> <br/>
 
-              </h1>
-
-              <v-btn
-                  rounded
-                  outlined
-                  large
-                  dark
-                  style="background: #ffffff; left: 182px;
-                   color:#000000; font-family: Poppins;font-weight: 700;font-size: 2px;border:0px"
-                   font-family: Poppins
-
-              ><img  src="@/assets/a_img/nuevologo.png"  width="85px"></v-btn>
-              <br/>
-              <br/> <br/>
-
-              <v-text-field
-                  align="center"
-                  v-model="name"
-                  label="Nombre"
-                  outlined
-                  clearable
-              ></v-text-field>
+            <v-text-field
+                align="center"
+                v-model="name"
+                label="Nombre"
+                outlined
+                clearable
+            ></v-text-field>
 
 
-              <v-text-field
-                  align="center"
-                  v-model="district"
-                  label="Ciudad-Distrito"
-                  outlined
-                  clearable
-              ></v-text-field>
+            <v-text-field
+                align="center"
+                v-model="district"
+                label="Ciudad-Distrito"
+                outlined
+                clearable
+            ></v-text-field>
 
-              <v-text-field
-                  align="center"
-                  v-model="email"
-                  label="Email"
-                  outlined
-                  clearable
-              ></v-text-field>
+            <v-text-field
+                align="center"
+                v-model="email"
+                label="Email"
+                outlined
+                clearable
+                type="email"
+            ></v-text-field>
 
-              <v-text-field
-                  align="center"
-                  v-model="message"
-                  label="Message"
-                  outlined
-                  clearable
-              ></v-text-field>
-
-              <v-btn
-                  rounded
-                  style="background: #b6deea; left: 152px;
+            <small class="form-text text-muted">Nunca compartiremos tu correo</small>
+            <v-divider></v-divider>
+            <v-btn
+                rounded
+                style="background: #b6deea; left: 2vh;
                    color:#000000; font-family: Poppins;font-weight: 700;font-size: 24px;border:0px"
-                  id="button"
-                  elevation="2" font-family: Poppins
-                  @click="sendEmail"
-              >Registrar</v-btn>
+                id="button"
+                 font-family: Poppins
+                type="submit"
+            >Registrar</v-btn>
+        <div class="mt-4">
+          <p class="m-0">{{message}}</p>
+        </div>
+          </v-form>
 
-             </v-form>
+
+        </div>
+      </div>
+        <v-col cols="10" style="">
+          <div style="display:inline">
 
 
-      </v-col>
-    </v-row>
+          <h1  style="font-family: 'Poppins';float:right;font-style: normal; color: #2E2E2E;font-weight: 700;font-size: 74px;line-height: 88px;letter-spacing: -0.01em; margin-top:-120px">
+
+            Sé parte del <br />
+            cambio <br />
+          </h1>
+
+          <v-img align="right" src="@/assets/a_img/registro.png"
+                 style="right:3vh;position: absolute;width: 60vh;height: 45vh;left:80vh;top:25% " content-class="img-fluid"></v-img>
+          </div>
+
+        </v-col>
+
+
+      </div>
+
+
   </v-content>
+  </div>
+    </div>
+  </div>
 
 </template>
 
 <script>
-import emailjs from 'emailjs-com';
-
+import {Auth} from "../firebase/auth";
 export default {
   name: "Registro",
   data() {
     return {name: '', email: '', message: '',district:''}
   },
   created(){
-    emailjs.init('7UaFG2Ise4CWlqSJt');
+
   },
   methods: {
-    sendEmail(e) {
-      const serviceID = 'default_service';
-      const templateID = 'template_sjl5dtr';
-      try {
-        emailjs.sendForm(serviceID, templateID, e.target, '7UaFG2Ise4CWlqSJt',
-            {name: this.name, email: this.email, message: this.message,district:this.district})
-      } catch (error) {
-        console.log({error})
-      } // Reset form field this.name = '' this.email = '' this.message = '' }, }
+    async addEmail(email) {
+      // eslint-disable-next-line no-unused-vars
+      var noticeMessage= "Su cuenta ha sido reservada exitosamente :)"
+      await Auth.createUserWithEmailAndPassword(email,'password').catch(function(error){
+        noticeMessage=error.message;
+      });
+      this.message=noticeMessage;
+      this.email='';
     }
   }
 }

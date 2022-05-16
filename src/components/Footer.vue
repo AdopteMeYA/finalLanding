@@ -1,7 +1,8 @@
 <template>
+  <v-responsive>
   <section id="contacto">
-  <v-content style="background-color: #ffffff; height:10vh" >
-    <v-row align="center" justify="center" style="margin-bottom:4px;height:23vh">
+  <v-content style="background-color: #ffffff; min-height: 10vh; max-height: 30vh" >
+    <v-row align="center" justify="center" style="; margin-bottom:4px">
 
       <v-col cols="10" style="left: 220px">
         <h1  style="font-family: 'Poppins'; font-style: inherit; color: #2E2E2E;font-size: 17px;line-height: 88px;letter-spacing: -0.01em; margin-top:-180px">
@@ -41,6 +42,7 @@
     </v-row>
   </v-content>
   </section>
+  </v-responsive>
 </template>
 
 <script>

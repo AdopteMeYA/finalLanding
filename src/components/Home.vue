@@ -1,10 +1,17 @@
 <template>
-  <section id="home">
-    <v-parallax dark src="@/assets/a_img/vector_azul.png" style="max-height: 600vh; height:830px ; width: 100% ;position: relative;margin-bottom:-110px ">
-      <v-row align="center" justify="center" style="margin-bottom:110px;height:50vh" >
-        <v-col cols="10" style="left: 220px">
 
-              <h1  style="font-family: 'Poppins';font-style: normal; color: #2E2E2E;font-weight: 700;font-size: 74px;line-height: 88px;letter-spacing: -0.01em; margin-top:-120px">
+
+    <div class="container-fluid m-0 p-0">
+
+      <div id="home" class="full-height p-4">
+        <div class="container pt-3">
+          <div class="row pb-5">
+
+    <v-parallax dark src="@/assets/a_img/vector_azul.png" style="max-height: 600vh; min-height:100vh ; width: 100% ;position: relative;margin-bottom:-110px ">
+      <div align="center" class="col-lg-6 pt-4 my-auto" >
+        <div class="col-sm-8" >
+
+              <h1  style="font-family: 'Poppins';font-style: normal; color: #2E2E2E;font-weight: 700;font-size: 70px;line-height: 88px;letter-spacing: -0.01em; margin-top:-100px">
                 <br/>
                 <br/>
                 Miles de <br />
@@ -18,7 +25,7 @@
                   large
                   dark
                   align="center"
-                  style="position: absolute;width: 186px;height: 50px;top: 580px; left: 450px;background: #FEC067;
+                  style="align-content: center;position: absolute;width: 24vh;height: 5vh;margin-top:5vh;  left: 25vh;background: #FEC067;
                    color:#000000; font-family: Poppins;font-weight: 700;font-size: 24px;border:0px">
                  prototipo
 
@@ -27,27 +34,29 @@
 
 
 
-        </v-col>
+        </div>
         <v-col cols="10" align="right">
           <v-img align="right" src="@/assets/a_img/5331015.png" alt="imagen de mujer con mascota"
-                  style="position: absolute;width: 80vh;height: 70vh;left: 115vh;top: 15%;"></v-img>
+                  style="position: absolute;width: 80vh;height: 70vh;left: 95vh;top: 15%;" content-class="img-fluid"></v-img>
 
         </v-col>
-      </v-row>
+      </div>
 
-    </v-parallax>
+            </v-parallax>
 
-    <v-container fluid id="porque" class="mt-2" style="position:relative;background-color: #FFCF8A; width: 100%;height: 760px; margin-top:0">
+    <v-container fluid id="porque" class="mt-2" style="position:relative;background-color: #FFCF8A; width: 100%;min-height: 100vh; margin-top:0">
       <v-row align="center" justify="center" >
 
-
+        <v-img src="@/assets/a_img/nuevologo.png" alt="logo de adopt me ya!" style=" dispaly:flex; max-height: 20vh; max-width: 15vh;margin-top:4vh;margin-bottom:0">   </v-img>
         <v-col cols="10">
-          <v-row align="center" justify="space-around" style="margin-top:-100px; margin-bottom:10px">
-            <v-col cols="12" class="text-center" style="background-color: #FFCF8A;margin-top:0; margin-bottom:0">
+
+          <v-row align="center" justify="space-around" style="margin-top:-100px; margin-bottom:10px; display:flex">
+            <v-col cols="12" class="text-center" style=" display:table-column;background-color: #FFCF8A;margin-top:0; margin-bottom:0">
               <h1 style="font-family: 'Poppins',serif;margin-top:5vh;font-style: normal;font-weight: 700;font-size: 60px;line-height: 54px;text-align: center;text-transform: capitalize;color: #2E2E2E;">
                 ¿Porqué usar Adopt Me Ya!?
 
               </h1>
+              <v-spacer></v-spacer>
               <v-btn
                   rounded
                   outlined
@@ -59,7 +68,7 @@
                   href="https://forms.gle/vEbMshzWuz5JufgWA">Ayudanos con tu opinión
               </v-btn>
               <v-spacer></v-spacer>
-              <v-img src="@/assets/a_img/nuevologo.png" alt="logo de adopt me ya!" style=" max-height: 20vh; max-width: 15vh;margin-top:-9vh;flex-direction: inherit "></v-img>
+
             </v-col>
 
             <v-col
@@ -75,7 +84,7 @@
                     shaped
                     :elevation="hover ? 10 : 4"
                     :class="{ up: hover }"
-                    style="font-family: Poppins;background-color:#B9E3F0"
+                    style="font-family: Poppins;background-color:#B9E3F0; flex-wrap:wrap"
 
                 >
                   <v-card
@@ -106,9 +115,13 @@
         </v-col>
       </v-row>
     </v-container>
+        </div>
+      </div>
+    </div>
+    </div>
 
 
-  </section>
+
 </template>
 
 <script>

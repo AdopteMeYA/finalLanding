@@ -1,5 +1,46 @@
 <template>
-<div>
+  <v-responsive>
+
+  <v-navigation-drawer
+      v-model="drawer"
+      app
+      temporary
+      dark
+      style="background-color:#FF0000"
+      src="@/assets/img/bgDrawer.jpg"
+  >
+    <v-list>
+      <v-list-item>
+        <v-list-item-avatar>
+          <img src="src/assets/img/logoN.png" alt="Logo" />
+        </v-list-item-avatar>
+        <v-list-item-content>
+          <v-list-item-title class="title">Calango</v-list-item-title>
+          <v-list-item-subtitle>WEB</v-list-item-subtitle>
+        </v-list-item-content>
+      </v-list-item>
+    </v-list>
+
+    <v-divider />
+
+    <v-list dense>
+      <v-list-item
+          v-for="([icon, text, link], i) in items"
+          :key="i"
+          link
+          @click="$vuetify.goTo(link)"
+      >
+        <v-list-item-icon class="justify-center">
+          <v-icon>{{ icon }}</v-icon>
+        </v-list-item-icon>
+        <v-list-item-content>
+          <v-list-item-title class="subtitile-1">{{
+              text
+            }}</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+    </v-list>
+  </v-navigation-drawer>
 
   <v-app-bar
       app
@@ -9,6 +50,7 @@
       class="px-15"
       :class="{ expand: flat }"
   >
+
 
       <v-img src="@/assets/a_img/nuevologo.png" alt="imagen de logo"
              style="max-height: 7vh; max-width: 7vh"> </v-img>
@@ -46,7 +88,8 @@
       </v-btn>
     </div>
   </v-app-bar>
-</div>
+
+  </v-responsive>
 </template>
 
 <style scoped>

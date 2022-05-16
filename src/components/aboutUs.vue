@@ -1,6 +1,9 @@
 <template>
-  <div class="aboutUs" id="sobre">
-    <v-row class="row1">
+  <div class="container-fluid m-0 p-0">
+  <div class="aboutUs full-height p-4" id="sobre" >
+    <div class="row1 row pb-5">
+  <div class="col-lg-6 pt-4 my-auto">
+
 
       <v-col class="col1">
 
@@ -10,7 +13,9 @@
           height="480"
           controls
         ></video>
+
       </v-col>
+  </div>
       <v-col style="left: 100px" >
 
         <h1 style="line-height: 48px">Sobre <br> Nosotros</h1>
@@ -33,7 +38,8 @@
           clientes.
         </p>
       </v-col>
-    </v-row>
+    </div>
+  </div>
   </div>
 </template>
 

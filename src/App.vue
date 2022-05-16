@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <navigation></navigation>
+    <navigation :color="color" :flat="flat"></navigation>
     <v-main class="pt-0">
       <home></home>
       <about-us></about-us>
@@ -8,10 +8,30 @@
       <Registro></Registro>
       <Footer></Footer>
     </v-main>
+    <v-scale-transition>
+      <v-btn
+          fab
+          v-show="fab"
+          v-scroll="onScroll"
+          dark
+          fixed
+          bottom
+          right
+          color="yellow"
+          @click="toTop"
+      >
+        <v-icon>mdi-arrow-up</v-icon>
+      </v-btn>
+    </v-scale-transition>
+
   </v-app>
 
 </template>
 
+<style scoped>
+
+
+</style>
 <script>
 
 
@@ -36,14 +56,14 @@ export default {
 
   data: () => ({
     fab: null,
-    color: "",
+    color: "#FF0000",
     flat: null,
   }),
 
   created() {
     const top = window.pageYOffset || 0;
     if (top <= 60) {
-      this.color = "transparent";
+      this.color = "#FF0000";
       this.flat = true;
     }
   },
@@ -54,7 +74,7 @@ export default {
         this.color = "secondary";
         this.flat = false;
       } else {
-        this.color = "transparent";
+        this.color = "#FF0000";
         this.flat = true;
       }
     },
